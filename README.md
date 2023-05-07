@@ -1,4 +1,4 @@
-**Tic Tac Toe Game**
+**Tic Tac Toe Game with redux state management**
 
 This is a simple Tic Tac Toe game built using React Redux with Redux-toolkit. The game allows two players to take turns placing their symbol on the board until one player wins or the board is filled.
 
