@@ -1,6 +1,6 @@
 {
   "name": "react-redux-tic-tac-toe",
-  "homepage": "https://pawelrogowski.github.io/react-redux-tic-tac-toe/",
+  "homepage": "https://pawelrogowski.github.io/react-redux-dev-tic-tac-toe/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
