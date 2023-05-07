@@ -14,6 +14,7 @@ export const gameSlice = createSlice({
       state.nextSymbol = "❌";
       state.winner = null;
       state.cells = Array(9).fill(null);
+      state.history = [[null, null, null, null, null, null, null, null]];
     },
     setNextSymbol: (state) => {
       state.nextSymbol = state.nextSymbol === "❌" ? "🇴" : "❌";
