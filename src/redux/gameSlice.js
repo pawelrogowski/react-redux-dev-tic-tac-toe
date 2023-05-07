@@ -1,20 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const emptyBoard = [[null, null, null, null, null, null, null, null, null]];
+const emptyCells = Array(9).fill(null);
 export const gameSlice = createSlice({
   name: "game",
   initialState: {
     nextSymbol: "❌",
-    cells: Array(9).fill(null),
+    cells: emptyCells,
     winner: null,
-    history: [[null, null, null, null, null, null, null, null, null]],
+    history: emptyBoard,
     currentMove: 0,
   },
   reducers: {
     resetBoard: (state) => {
       state.nextSymbol = "❌";
       state.winner = null;
-      state.cells = Array(9).fill(null);
-      state.history = [[null, null, null, null, null, null, null, null]];
+      state.cells = emptyCells;
+      state.history = emptyBoard;
     },
     setNextSymbol: (state) => {
       state.nextSymbol = state.nextSymbol === "❌" ? "🇴" : "❌";
